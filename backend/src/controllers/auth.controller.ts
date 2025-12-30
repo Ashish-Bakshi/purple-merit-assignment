@@ -6,8 +6,9 @@ import { signToken } from "../utils/jwt";
 const cookieOptions = {
   httpOnly: true,
   secure: false,
-  sameSite: "lax" as const,
+  sameSite: "none",
   path: "/",
+  domain: ".onrender.com",
   maxAge: 24 * 60 * 60 * 1000
 };
 
