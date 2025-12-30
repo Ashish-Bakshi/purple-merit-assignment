@@ -9,6 +9,6 @@
     "skipLibCheck": true,
     "types": ["node"]
   },
-  "include": ["src", "generated/prisma/*"],
+  "include": ["src""],
   "exclude": ["node_modules", "dist", "src/tests"]
 }
