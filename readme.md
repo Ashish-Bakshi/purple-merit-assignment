@@ -1,20 +1,17 @@
 # Purple Merit Assignment – Full Stack Application
 
-## Project Overview & Purpose
+## 🌐 Live Demo
+### Frontend (Vercel)
 
-This project is a full-stack web application built as part of an assignment to demonstrate practical skills in backend development, authentication, role-based access control, frontend UI/UX, and testing.
+👉 Live App:
+https://purple-merit-assignment-eight.vercel.app
 
-The application supports:
-- User authentication using cookies
-- Role-based access (USER / ADMIN)
-- Profile management
-- Admin user management (activate/deactivate users)
-- Clean, responsive UI with proper feedback
-- Backend unit and integration testing
+Backend (Render)
 
-The goal was to build a **realistic, production-style application** with clear separation of concerns, proper validation, and test coverage.
+👉 API Base URL:
+https://purple-merit-assignment-backend.onrender.com
 
----
+--- 
 
 ## 1. Tech Stack Used
 
@@ -30,7 +27,7 @@ The goal was to build a **realistic, production-style application** with clear s
 - Express.js
 - TypeScript
 - Prisma ORM
-- PostgreSQL
+- PostgreSQL (Neon DB)
 
 ### Authentication & Security
 - JWT (stored in HTTP-only cookies)
