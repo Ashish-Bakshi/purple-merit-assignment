@@ -2,10 +2,11 @@ import { Request, Response } from "express";
 import bcrypt from "bcrypt";
 import prisma from "../config/prisma";
 import { signToken } from "../utils/jwt";
+import { CookieOptions } from "express";
 
-const cookieOptions = {
+const cookieOptions: CookieOptions = {
   httpOnly: true,
-  secure: false,
+  secure: true,
   sameSite: "none",
   path: "/",
   domain: ".onrender.com",
@@ -95,9 +96,10 @@ export async function login(req: Request, res: Response) {
 export function logout(req: Request, res: Response) {
     res.clearCookie("token", {
     httpOnly: true,
-    sameSite: "lax",
+    sameSite: "none",
     path: "/",
-    secure: false
+    secure: true,
+    domain: ".onrender.com",
   });
   res.json({ message: "Logged out" });
 }
