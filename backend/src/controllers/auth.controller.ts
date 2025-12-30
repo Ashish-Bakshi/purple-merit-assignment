@@ -9,7 +9,7 @@ const cookieOptions: CookieOptions = {
   secure: true,
   sameSite: "none",
   path: "/",
-  domain: ".onrender.com",
+  // domain: ".onrender.com",
   maxAge: 24 * 60 * 60 * 1000
 };
 
@@ -99,7 +99,7 @@ export function logout(req: Request, res: Response) {
     sameSite: "none",
     path: "/",
     secure: true,
-    domain: ".onrender.com",
+    // domain: ".onrender.com",
   });
   res.json({ message: "Logged out" });
 }
